@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap" rel="stylesheet">
+    <title>
+        FITNESS
+    </title>
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0px;
+            padding: 0px;
+            background-image:url("https://source.unsplash.com/1600x900/?gym");
+            color: white;
+            
+        }
+        .left img{
+            width: 100px;
+            
+        }
+        .left div{
+            text-align: center;
+        }
+        .left {
+
+            display: inline;
+            position: absolute;
+            left: 15px;
+            top: 20px
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 18px;
+        }
+        .navbar li a:hover{
+            text-decoration: underline;
+            color: grey;
+        }
+        .navbar a {
+            color: azure;
+            text-decoration: none;
+            padding: 23px 25px;
+        }
+
+        .mid {
+             border:2px solid;
+            display:block;
+            width: 40%;
+            margin: 22px auto;
+            top: 20px;
+            background-color: black;
+            border-radius: 20px;
+        }
+
+        .right {
+            /* border:2px solid green; */
+            display: inline-block;
+            position: absolute;
+            right: 15px;
+            top: 35px;
+            padding: 5px;
+        }
+        .btn{
+            font-size: 20px;
+            font-family: 'Lato', sans-serif;
+            background-color: black;
+            color: aliceblue;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .btn:hover{
+            background-color: rgb(47, 42, 42);
+        }
+        .container{
+            border: 2px solid white;
+            width:25%;
+            margin: 200px 25px;
+            padding:25px 10px ;
+            background-color: rgba(0, 0, 0, 0.41);
+            background-blend-mode: lighten;
+            border-radius: 10px;
+        }
+        .right button{
+            padding: 5px 10px;
+                }
+        .container h1{
+            text-align: center;
+        }
+        .container div{
+            text-align: center;
+            font-size: 19px;
+            padding: 5px;
+        }
+        .container input{
+            text-align: center;
+            font-size: 15px;
+        }
+        .submit button{
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="R.jpg">
+            <div>FITNESS CLUB</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home   </a></li>
+                <li><a href="#">About Us  </a></li>
+                <li><a href="#">Fitness center  </a></li>
+                <li><a href="#">Contact Us   </a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+        <div class="container">
+            <h1>
+                Fill the form for registration
+            </h1>
+            <form action="backend.php"></form>
+            <div><input type="text" placeholder="ENTER NAME"></div>
+            <div><input type="number" placeholder="ENTER AGE"></div>
+            <div>Male<input type="radio" name="Mygender">Female<input type="radio" name="Mygender">Other<input type="radio" name="Mygender">
+            <div><input type="text" placeholder="ENTER LOCALITY"></div>
+            <div class="submit">
+                <button>Submit</button>
+                <button>Reset</button>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
